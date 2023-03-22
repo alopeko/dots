@@ -1,0 +1,5 @@
+set recolor true
+
+include catppuccin-mocha
+
+set font "JetBrains Mono Medium Nerd Font Complete 10"
