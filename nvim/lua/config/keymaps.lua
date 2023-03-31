@@ -5,7 +5,7 @@
 local map = vim.keymap.set
 
 -- Escape insert mode with "jk"
-map("i", "jk", "<esc>")
+map({ "i", "v" }, "jk", "<esc>")
 
 -- Save with <S-w>
 map({ "n", "v" }, "<S-w>", ":w!<CR>")
