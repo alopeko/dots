@@ -1,5 +1,6 @@
 return {
-  { -- VimTeX for automatic compilation
+  {
+    -- VimTeX for automatic compilation
     "lervag/vimtex",
     lazy = true,
     config = function()

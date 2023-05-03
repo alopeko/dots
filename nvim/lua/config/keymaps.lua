@@ -5,7 +5,7 @@
 local map = vim.keymap.set
 
 -- Escape insert mode with "jk"
-map({ "i", "v" }, "jk", "<esc>")
+map("i", "jk", "<esc>")
 
 -- Save with <S-w>
 map({ "n", "v" }, "<S-w>", ":w!<CR>")
@@ -15,3 +15,11 @@ map({ "n", "v" }, "<S-q>", ":q!<CR>")
 
 -- Close current buffer with <S-d>
 map({ "n", "v" }, "<S-d>", "<leader>bD", { remap = true })
+
+-- Markdown Preview
+-- vim.api.nvim_create_user_command("PeekOpen", require("peek").open, {})
+-- vim.api.nvim_create_user_command("PeekClose", require("peek").close, {})
+--
+-- map("n", "<S-l>", ":PeekOpen<CR>")
+-- map("n", "<C-l>", ":PeekClose<CR>")
+map("n", "<S-l>", ":MarkdownPreviewToggle<CR>")
